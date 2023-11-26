@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Petrol Pump App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'login')">Login</button>
+</div>
+<div id="login" class="tabcontent">
+  <!-- Add your login form here -->
+  <form id="loginform">
+ 
+    <!-- Input fields for username and password -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    
+    <button type="button" onclick="authenticate()">Login</button>
+  </form>
+  
+</div>
+  <header>
+      <h1>Smart Petrol Pump</h1>
+  </header>
+  <main>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+      <button class="tablinks" onclick="openTab(event, 'accountDetails')">Account Details</button>
+      <button class="tablinks" onclick="openTab(event, 'paymentOptions')">Payment Options</button>
+      <button class="tablinks" onclick="openTab(event, 'services')">Services</button>
+      <button class="tablinks" onclick="openTab(event, 'location')">Location</button>
+      <button class="tablinks" onclick="openTab(event, 'fuelCapacity')">Fuel Capacity</button>
+    </div>
+    <div id="about" class="tabcontent">
+     <h2>About</h2>
+      <p><h3>Welcome to Smart Petrol Pump App</h3></p> 
+      <p>Welcome to our Smart Petrol Pump! We strive to revolutionize the way you experience refueling by offering innovative services and cutting-edge technology.</p>
+      <p>At our station, you can expect:</p>
+      <ul>
+        <li>Efficient and quick refueling services</li>
+        <li>Secure and user-friendly payment options</li>
+        <li>Convenient location and easy accessibility</li>
+        <li>Quality customer care and assistance</li>
+        <li>Additional services like vehicle maintenance, fuel delivery, and more</li>
+      </ul>
+       <ul>
+        <li><strong>Convenience:</strong> Our strategically located pumps make refueling hassle-free, saving you time on your journeys.</li>
+        <li><strong>Technology:</strong> We employ the latest technology to ensure quick and secure transactions, making payment an effortless process.</li>
+        <li><strong>Quality Service:</strong> Our dedicated staff is trained to offer you prompt and friendly service, ensuring a pleasant refueling experience.</li>
+        <li><strong>Additional Services:</strong> Beyond refueling, we provide services such as vehicle maintenance, fuel delivery, and customer support to cater to your needs.</li>
+        <li><strong>Environment-friendly Practices:</strong> We are committed to eco-friendly initiatives, ensuring responsible fueling practices for a sustainable future.</li>
+      </ul>
+      <p>Experience a smarter way to fuel your journey with us!</p>
+      </div>
+
+    <div id="accountDetails" class="tabcontent">
+      <!-- Account details section -->
+      <!-- Input fields for username, password, etc. -->
+     <h2>Account Details</h2>
+  <form id="accountform">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" placeholder="Enter your mobile number">
+    
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+    
+    <label for="language">Language:</label>
+    <select id="language">
+      <option value="english">English</option>
+      <option value="spanish">Spanish</option>
+      <option value="french">French</option>
+      <!-- Add other language options -->
+    </select>
+    
+    <h2>
+      <a href="#" target="_blank">Your Orders</a><br>
+      <a href="#" target="_blank">Your Rating</a><br>
+      <a href="#" target="_blank">Help</a><br>
+      <a href="#" target="_blank">Settings</a><br>
+      <a href="#" target="_blank">Coupons</a><br>
+      <a href="#" target="_blank">About</a><br>
+      <a href="#" target="_blank">Feedback</a><br>
+      <a href="#" target="_blank">Log Out</a></h2>
+    
+    <!-- Other account-related inputs can be added here -->
+    <button type="button" onclick="saveAccountDetails()">Save Changes</button>
+    
+  </form>
+</div>
+
+<div id="displayDetails" class="tabcontent">
+  <h2>Displayed Details</h2>
+  <!-- Display area for captured details from the Account tab -->
+  <p id="displayedName"></p>
+  <p id="displayedMobile"></p>
+  <p id="displayedEmail"></p>
+  <p id="displayedLanguage"></p>
+</div>
+    </div>
+    <div id="paymentOptions" class="tabcontent">
+  <h2>Payment Options</h2>
+  <div id="creditCardContent">
+    <h3><a href="https://www.example.com/creditcard">Credit Card Payment</a></h3>
+  </div>
+
+  <div id="debitCardContent">
+    <h3><a href="https://www.example.com/debitcard">Debit Card Payment</a></h3>
+  </div>
+
+  <div id="paypalContent">
+    <h3><a href="www.paypal.com/">PayPal Payment</a></h3>
+  </div>
+
+  <div id="googlePayContent">
+    <h3><a href="www.googlepay.com">Google Pay Payment</a></h3>
+  </div>
+
+  <!-- Add more divs for additional payment methods -->
+
+  <button type="button" onclick="openPaymentMethod()">Proceed</button>
+</div>
+  <!-- ... (Previous HTML code remains unchanged) ... -->
+
+<!-- ... (Previous HTML code remains unchanged) ... -->
+
+<div id="services" class="tabcontent">
+  <h2>Services</h2>
+  <div id="serviceOptions">
+    <table>
+      <tr>
+        <td>
+          <h3><a href="https://www.example.com/vehicle-service">Vehicle Service</a></h3>
+        </td>
+        <td>
+          <h3><a href="https://www.example.com/fuel-delivery">Fuel Delivery</a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3><a href="https://www.example.com/customer-care">Customer Care</a></h3>
+        </td>
+        <td>
+          <h3><a href="https://www.example.com/help-line">Help Line</a></h3>
+        </td>
+      </tr>
+      <!-- Add more rows/columns for additional services -->
+    </table>
+  </div>
+
+  <button type="button" onclick="selectService()">Proceed</button>
+</div>
+
+<!-- ... (Remaining HTML code remains unchanged) ... -->
+<!-- ... (Previous HTML code remains unchanged) ... -->
+
+<div id="location" class="tabcontent">
+  <h2>Location</h2>
+  <div>
+    <h3><a href="https://www.google.com/maps/search/?api=1&query=petrol+pumps" target="_blank">Find Nearby Petrol Pumps</a></h3>
+  </div>
+</div>
+
+<!-- ... (Remaining HTML code remains unchanged) ... -->
+
+    
+    <div id="fuelCapacity" class="tabcontent">
+      <!-- Fuel capacity section -->
+      <!-- Input for selecting fuel quantity -->
+      <h2>Fuel Capacity</h2>
+    </div>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
