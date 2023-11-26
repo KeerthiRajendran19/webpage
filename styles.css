@@ -1,0 +1,184 @@
+
+/* Styles for tabs and tab content */
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+body {
+  color: #fff; /* Set text color for the entire page to white */
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+h1{
+color: black;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Additional styles for login form (adjust as needed) */
+#loginform {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ 
+/* Updated CSS for tabbed interface with larger options and different colors */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.tab button {
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.tab button:hover {
+  background-color: #bbb;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent:first-child {
+  display: block;
+}
+
+/* Updated CSS to center the title */
+header {
+  text-align: center;
+  background-color: white; /* Background color for the header */
+}
+h2 {
+  text-align: center;
+}
+h3{
+text-align: center;
+}
+.title {
+  margin: 0;
+  padding: 20px 0;
+   color: #333; /* Title color */
+}
+/* Updated CSS with colorful background gradient */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, black, black); /* Gradient colors */
+
+}
+/* Updated CSS to change text color in the Account Details tab */
+#accountDetails {
+  color: white; /* Change text color for the Account Details tab */
+}
+
+#accountDetails input,
+#accountDetails select,
+#accountDetails ul {
+  color: white; /* Input text color for the Account Details tab */
+}
+/* Updated CSS to display Account Details fields vertically */
+#accountDetails {
+  color: white; /* Text color */
+}
+
+#accountDetails form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between fields */
+}
+
+#accountDetails label {
+  margin-bottom: 5px;
+}
+
+#accountDetails input,
+#accountDetails select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Updated CSS to set text color for payment options to white */
+#paymentOptions {
+  color: black; /* Set text color for the Payment Options tab to white */
+}
+
+#paymentOptions h3 {
+  color: black; /* Set text color for payment option headings to white */
+}
+/* Updated CSS to style the service options */
+#serviceOptions {
+  margin-top: 20px; /* Add spacing between services and button */
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+table {
+  width: 100%; /* Set table width to fill container */
+  border-collapse: collapse; /* Collapse table borders */
+  color: #fff; /* Set text color to white */
+}
+
+table td {
+  padding: 10px; /* Add padding to table cells */
+  text-align: center; /* Center-align table cell content */
+  border: 2px solid #ccc; /* Add borders to table cells */
+}
+
+table h3 {
+  font-size: 1.5em; /* Increase font size of service headings */
+  margin: 0; /* Remove default margin for headings */
+}
+
+table a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set link color */
+}
+/* CSS to set font color to white for the Location tab content */
+#location {
+  color: #fff; /* Set text color for the Location tab content to white */
+}
+
+#map {
+  /* Adjust styles for the map container if needed */
+}
